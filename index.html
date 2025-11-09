@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebFolio - Giremu">
+    <title>WebFolio - Giremu</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-theme="cyber-dark">
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text" data-i18n="nav.name">Giremu</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#home" data-i18n="nav.home">Accueil</a>
+                <a href="#about" data-i18n="nav.about">À propos</a>
+                <a href="#skills" data-i18n="nav.skills">Compétences</a>
+                <a href="#projects" data-i18n="nav.projects">Projets</a>
+                <a href="#passions" data-i18n="nav.passions">Passions</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+            </div>
+            
+            <div class="nav-controls">
+                <!-- Theme Switcher -->
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeBtn" aria-label="Changer de thème">
+                        <i class="fas fa-palette"></i>
+                    </button>
+                    <div class="theme-menu" id="themeMenu">
+                        <button class="theme-option" data-theme="cyber-dark">
+                            <span class="theme-color cyber-dark-color"></span>
+                            <span data-i18n="themes.cyber">Cyber Dark</span>
+                        </button>
+                        <button class="theme-option" data-theme="light-pro">
+                            <span class="theme-color light-pro-color"></span>
+                            <span data-i18n="themes.light">Professional</span>
+                        </button>
+                        <button class="theme-option" data-theme="matrix">
+                            <span class="theme-color matrix-color"></span>
+                            <span data-i18n="themes.matrix">Matrix</span>
+                        </button>
+                        <button class="theme-option" data-theme="ocean">
+                            <span class="theme-color ocean-color"></span>
+                            <span data-i18n="themes.ocean">Ocean</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLang">FR</span>
+                    </button>
+                    <div class="lang-menu" id="langMenu">
+                        <button class="lang-option" data-lang="fr">Français</button>
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="jp">日本語</button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+            <canvas id="particles"></canvas>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting">
+                    <span class="hero-bracket">&gt;</span>
+                    <span data-i18n="hero.greeting">Bonjour, je suis</span>
+                </div>
+                <h1 class="hero-name glitch" data-text="Giremu">Giremu</h1>
+                <div class="hero-titles">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description" data-i18n="hero.description">
+                    Passionné par la cybersécurité, l'automatisation et l'infrastructure système, 
+                    je conçois des solutions sécurisées et automatisées pour un monde numérique plus fiable.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.projects">
+                        <i class="fas fa-rocket"></i> Voir mes projets
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta.contact">
+                        <i class="fas fa-envelope"></i> Me contacter
+                    </a>
+                    <a href="assets/cv/cv.pdf" download class="btn btn-outline" data-i18n="hero.cta.cv">
+                        <i class="fas fa-download"></i> Télécharger CV
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p data-i18n="hero.scroll">Scroll</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01.</span>
+                <h2 class="section-title" data-i18n="about.title">À propos de moi</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about.intro">
+                        Spécialisé dans la <strong>cybersécurité</strong> et l'<strong>infrastructure système</strong>, 
+                        je combine expertise technique et créativité pour construire des environnements informatiques 
+                        robustes et sécurisés.
+                    </p>
+                    <p data-i18n="about.description">
+                        Mon parcours m'a permis de développer une vision complète des enjeux de sécurité, 
+                        de l'architecture réseau à l'automatisation des déploiements. J'aime résoudre des 
+                        problèmes complexes et créer des solutions innovantes.
+                    </p>
+                    
+                    <h3 data-i18n="about.technologies">Technologies que j'utilise :</h3>
+                    <div class="tech-list">
+                        <div class="tech-category">
+                            <h4 data-i18n="about.tech.security">Sécurité</h4>
+                            <ul>
+                                <li>WireShark</li>
+                                <li>Kali linux</li>
+                                <li>Firewall</li>
+                                <li>RDP & SSH</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h4 data-i18n="about.tech.infra">Infrastructure</h4>
+                            <ul>
+                                <li>Linux Administration</li>
+                                <li>Windows Server</li>
+                                <li>Docker</li>
+                                <li>Ansible / n8n</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h4 data-i18n="about.tech.dev">Développement</h4>
+                            <ul>
+                                <li>Python / Bash / PowerShell</li>
+                                <li>API REST</li>
+                                <li>Automatisation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="assets/images/pfp.jpg" alt="Photo de profil">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02.</span>
+                <h2 class="section-title" data-i18n="skills.title">Compétences</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-i18n="skills.security.title">Cybersécurité</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span data-i18n="skills.security.pentest">Penetration Testing</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span data-i18n="skills.security.vuln">Analyse de vulnérabilités</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span data-i18n="skills.security.incident">Réponse aux incidents</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 data-i18n="skills.infra.title">Infrastructure</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Linux / Unix</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Docker / Kubernetes</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Ansible / Terraform</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 data-i18n="skills.dev.title">Développement</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript / Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Bash Scripting</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 data-i18n="skills.auto.title">Automatisation</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>CI/CD Pipelines</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="87"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>n8n Workflows</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span data-i18n="skills.auto.monitoring">Monitoring & Alerting</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03.</span>
+                <h2 class="section-title" data-i18n="projects.title">Mes Projets</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Python Game -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project-python-game.jpg" alt="Jeu Python" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 600 400%22%3E%3Crect fill=%22%233776ab%22 width=%22600%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22monospace%22 font-size=%2240%22 fill=%22white%22%3EPython Game%3C/text%3E%3C/svg%3E'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Giremuu/python-game" target="_blank" rel="noopener" aria-label="Voir le code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener" aria-label="Démo live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-i18n="projects.game.title">Jeu Interactif Python</h3>
+                        <p class="project-description" data-i18n="projects.game.description">
+                            Jeu développé en Python avec Pygame, incluant gestion des collisions, 
+                            système de score et niveaux progressifs. Architecture orientée objet et animations fluides.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pygame</span>
+                            <span class="tag">OOP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Ansible Playbook -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project-ansible.jpg" alt="Ansible Playbook" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 600 400%22%3E%3Crect fill=%22%23ee0000%22 width=%22600%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22monospace%22 font-size=%2240%22 fill=%22white%22%3EAnsible%3C/text%3E%3C/svg%3E'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Giremuu/ansible-infra" target="_blank" rel="noopener" aria-label="Voir le code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-i18n="projects.ansible.title">Playbook Ansible - Infrastructure</h3>
+                        <p class="project-description" data-i18n="projects.ansible.description">
+                            Automatisation complète du déploiement d'infrastructure avec Ansible. 
+                            Configuration de serveurs, hardening sécurité, et déploiement d'applications conteneurisées.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Ansible</span>
+                            <span class="tag">Infrastructure as Code</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Security</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: n8n Mail Automation -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project-n8n.jpg" alt="Automatisation n8n" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 600 400%22%3E%3Crect fill=%22%23ea4b71%22 width=%22600%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22monospace%22 font-size=%2240%22 fill=%22white%22%3En8n Automation%3C/text%3E%3C/svg%3E'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Giremuu/n8n-mail-automation" target="_blank" rel="noopener" aria-label="Voir le code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-i18n="projects.n8n.title">Automatisation Email avec n8n</h3>
+                        <p class="project-description" data-i18n="projects.n8n.description">
+                            Workflow d'automatisation pour la gestion intelligente des emails : 
+                            filtrage, classification, réponses automatiques et notifications personnalisées.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">n8n</span>
+                            <span class="tag">Workflow</span>
+                            <span class="tag">Automation</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Passions Section -->
+    <section class="section passions" id="passions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04.</span>
+                <h2 class="section-title" data-i18n="passions.title">Mes Passions</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <p class="passions-intro" data-i18n="passions.intro">
+                En dehors du monde de la tech, je suis passionné par l'univers du gaming et des mangas !
+            </p>
+            
+            <div class="passions-content">
+                <!-- Gaming -->
+                <div class="passion-category">
+                    <div class="passion-header">
+                        <i class="fas fa-gamepad"></i>
+                        <h3 data-i18n="passions.gaming.title">Jeux Vidéo</h3>
+                    </div>
+                    <div class="passion-items">
+                        <div class="passion-card">
+                            <div class="passion-icon">🎮</div>
+                            <h4>The Witcher 3</h4>
+                            <p data-i18n="passions.gaming.witcher">RPG immersif avec une histoire captivante</p>
+                        </div>
+                        <div class="passion-card">
+                            <div class="passion-icon">⚔️</div>
+                            <h4>Dark Souls Series</h4>
+                            <p data-i18n="passions.gaming.souls">Challenge et satisfaction garantis</p>
+                        </div>
+                        <div class="passion-card">
+                            <div class="passion-icon">🏎️</div>
+                            <h4>Rocket League</h4>
+                            <p data-i18n="passions.gaming.rocket">Football + voitures = addiction</p>
+                        </div>
+                        <div class="passion-card">
+                            <div class="passion-icon">🔫</div>
+                            <h4>Valorant</h4>
+                            <p data-i18n="passions.gaming.valorant">FPS tactique et compétitif</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Manga -->
+                <div class="passion-category">
+                    <div class="passion-header">
+                        <i class="fas fa-book"></i>
+                        <h3 data-i18n="passions.manga.title">Manga & Anime</h3>
+                    </div>
+                    <div class="passion-items">
+                        <div class="passion-card">
+                            <div class="passion-icon">🏐</div>
+                            <h4>Haikyuu!!</h4>
+                            <p data-i18n="passions.manga.haikyuu">L'excellence du volleyball animé</p>
+                        </div>
+                        <div class="passion-card">
+                            <div class="passion-icon">👊</div>
+                            <h4>One Punch Man</h4>
+                            <p data-i18n="passions.manga.opm">Humour et action explosive</p>
+                        </div>
+                        <div class="passion-card">
+                            <div class="passion-icon">🗡️</div>
+                            <h4>Attack on Titan</h4>
+                            <p data-i18n="passions.manga.aot">Scénario complexe et palpitant</p>
+                        </div>
+                        <div class="passion-card">
+                            <div class="passion-icon">🍜</div>
+                            <h4>Naruto</h4>
+                            <p data-i18n="passions.manga.naruto">Le classique qui a tout changé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05.</span>
+                <h2 class="section-title" data-i18n="contact.title">Contactez-moi</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-i18n="contact.lets-talk">Discutons ensemble !</h3>
+                    <p data-i18n="contact.description">
+                        Vous avez un projet en tête ? Une question ? Ou simplement envie de discuter tech, 
+                        cybersécurité, ou même de gaming ? N'hésitez pas à me contacter !
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4 data-i18n="contact.email">Technique</h4>
+                                <a href="https://www.root-me.org/Giremu?lang=fr#8d55f5cdbcd409c7336ec283b0514e14">RootMe</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/Giremuu" target="_blank" rel="noopener">github.com/Giremuu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact.form.name">Nom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact.form.email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" data-i18n="contact.form.subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact.form.message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-i18n="contact.form.send">Envoyer le mail</span>
+                        </button>
+                        
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Giremu <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/theme-switcher.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

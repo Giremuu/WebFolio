@@ -1,0 +1,429 @@
+/*
+====================================
+RESPONSIVE STYLES
+====================================
+*/
+
+/* ==================== TABLET (< 1024px) ==================== */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .section {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    /* About Section */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .about-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .tech-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contact Section */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* ==================== MOBILE (< 768px) ==================== */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .section {
+        padding: 3rem 0;
+    }
+    
+    /* Navigation */
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--overlay);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transform: translateX(-100%);
+        transition: transform var(--transition-base);
+        z-index: var(--z-dropdown);
+    }
+    
+    .nav-links.active {
+        transform: translateX(0);
+    }
+    
+    .nav-links a {
+        font-size: 1.5rem;
+    }
+    
+    .mobile-toggle {
+        display: flex;
+    }
+    
+    .mobile-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .theme-switcher,
+    .lang-switcher {
+        position: static;
+    }
+    
+    .theme-menu,
+    .lang-menu {
+        left: auto;
+        right: 0;
+    }
+    
+    /* Hero Section */
+    .hero {
+        min-height: 100vh;
+        padding-top: 70px;
+    }
+    
+    .hero-greeting {
+        font-size: 1rem;
+    }
+    
+    .hero-titles {
+        min-height: 4rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-cta .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+    
+    /* Section Headers */
+    .section-header {
+        flex-wrap: wrap;
+    }
+    
+    .section-number {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-line {
+        width: 100%;
+        order: 3;
+    }
+    
+    /* Tech List */
+    .tech-list {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        max-width: 100%;
+    }
+    
+    /* Passions */
+    .passion-items {
+        grid-template-columns: 1fr;
+    }
+    
+    .passions-content {
+        gap: 2rem;
+    }
+    
+    /* Contact */
+    .contact-methods {
+        margin-top: 1.5rem;
+    }
+    
+    .contact-method {
+        flex-direction: row;
+    }
+    
+    .contact-method i {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+}
+
+/* ==================== SMALL MOBILE (< 480px) ==================== */
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .container {
+        padding: 0 0.75rem;
+    }
+    
+    /* Hero */
+    .hero-name {
+        font-size: 2.5rem;
+    }
+    
+    .hero-titles {
+        font-size: 1.2rem;
+    }
+    
+    .hero-socials {
+        justify-content: center;
+    }
+    
+    /* Logo */
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    /* Theme & Lang Buttons */
+    .theme-btn,
+    .lang-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .theme-menu,
+    .lang-menu {
+        min-width: 180px;
+    }
+    
+    /* Section Headers */
+    .section-number {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    /* Cards */
+    .skill-card,
+    .project-card,
+    .passion-category {
+        padding: 1.5rem;
+    }
+    
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+    
+    /* Project Links */
+    .project-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* ==================== LANDSCAPE MODE (mobile) ==================== */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 4rem 0;
+    }
+    
+    .nav-links {
+        height: auto;
+        padding: 2rem;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+/* ==================== PRINT STYLES ==================== */
+@media print {
+    .navbar,
+    .scroll-indicator,
+    .hero-socials,
+    .footer-socials,
+    .theme-switcher,
+    .lang-switcher,
+    .mobile-toggle,
+    .project-overlay {
+        display: none !important;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+}
+
+/* ==================== HOVER EFFECTS (Desktop only) ==================== */
+@media (hover: hover) and (pointer: fine) {
+    /* Enable hover effects only on devices with precise pointers */
+    .project-card:hover,
+    .skill-card:hover,
+    .passion-card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* ==================== REDUCED MOTION ==================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .hero-background,
+    .grid-overlay,
+    #particles {
+        display: none;
+    }
+}
+
+/* ==================== HIGH CONTRAST MODE ==================== */
+@media (prefers-contrast: high) {
+    .btn,
+    .project-card,
+    .skill-card,
+    .passion-card {
+        border-width: 2px;
+    }
+    
+    .hero-name {
+        -webkit-text-fill-color: var(--color-primary);
+        background: none;
+    }
+}
+
+/* ==================== DARK MODE PREFERENCE ==================== */
+@media (prefers-color-scheme: dark) {
+    /* Theme est géré par data-theme, mais on peut ajouter des ajustements ici si nécessaire */
+}
+
+/* ==================== TOUCH DEVICE OPTIMIZATIONS ==================== */
+@media (hover: none) and (pointer: coarse) {
+    /* Increase touch targets */
+    .btn,
+    .nav-links a,
+    .theme-btn,
+    .lang-btn,
+    .mobile-toggle {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Remove hover effects */
+    .project-overlay {
+        opacity: 0.9;
+    }
+    
+    /* Better tap feedback */
+    button,
+    a {
+        -webkit-tap-highlight-color: rgba(102, 126, 234, 0.2);
+    }
+}
+
+/* ==================== ULTRA-WIDE SCREENS (> 1920px) ==================== */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    html {
+        font-size: 18px;
+    }
+}
+
+/* ==================== ACCESSIBILITY - FOCUS STYLES ==================== */
+*:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+/* ==================== SAFARI SPECIFIC FIXES ==================== */
+@supports (-webkit-backdrop-filter: blur(10px)) {
+    .navbar {
+        -webkit-backdrop-filter: blur(10px);
+    }
+    
+    .nav-links {
+        -webkit-backdrop-filter: blur(20px);
+    }
+}

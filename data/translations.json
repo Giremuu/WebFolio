@@ -1,0 +1,332 @@
+{
+  "fr": {
+    "nav": {
+      "name": "Giremu",
+      "home": "Accueil",
+      "about": "À propos",
+      "skills": "Compétences",
+      "projects": "Projets",
+      "passions": "Passions",
+      "contact": "Contact"
+    },
+    "hero": {
+      "greeting": "Bonjour, je suis",
+      "description": "Passionné par la cybersécurité et l'infrastructure système, je conçois des solutions sécurisées et automatisées pour un monde numérique plus fiable.",
+      "cta": {
+        "projects": "Voir mes projets",
+        "contact": "Me contacter",
+        "cv": "Télécharger CV"
+      },
+      "scroll": "Scroll"
+    },
+    "about": {
+      "title": "À propos de moi",
+      "intro": "Spécialisé dans la <strong>cybersécurité</strong> et l'<strong>infrastructure système</strong>, je combine expertise technique et créativité pour construire des environnements informatiques robustes et sécurisés.",
+      "description": "Mon parcours m'a permis de développer une vision complète des enjeux de sécurité, de l'architecture réseau à l'automatisation des déploiements. J'aime résoudre des problèmes complexes et créer des solutions innovantes.",
+      "technologies": "Technologies que j'utilise :",
+      "tech": {
+        "security": "Sécurité",
+        "infra": "Infrastructure",
+        "dev": "Développement"
+      }
+    },
+    "skills": {
+      "title": "Compétences",
+      "security": {
+        "title": "Cybersécurité",
+        "pentest": "Penetration Testing",
+        "vuln": "Analyse de vulnérabilités",
+        "incident": "Réponse aux incidents"
+      },
+      "infra": {
+        "title": "Infrastructure"
+      },
+      "dev": {
+        "title": "Développement"
+      },
+      "auto": {
+        "title": "Automatisation",
+        "monitoring": "Monitoring & Alerting"
+      }
+    },
+    "projects": {
+      "title": "Mes Projets",
+      "game": {
+        "title": "Jeu Interactif Python",
+        "description": "Jeu développé en Python avec Pygame, incluant gestion des collisions, système de score et niveaux progressifs. Architecture orientée objet et animations fluides."
+      },
+      "ansible": {
+        "title": "Playbook Ansible - Infrastructure",
+        "description": "Automatisation complète du déploiement d'infrastructure avec Ansible. Configuration de serveurs, hardening sécurité, et déploiement d'applications conteneurisées."
+      },
+      "n8n": {
+        "title": "Automatisation Email avec n8n",
+        "description": "Workflow d'automatisation pour la gestion intelligente des emails : filtrage, classification, réponses automatiques et notifications personnalisées."
+      }
+    },
+    "passions": {
+      "title": "Mes Passions",
+      "intro": "En dehors du monde de la tech, je suis passionné par l'univers du gaming et des mangas !",
+      "gaming": {
+        "title": "Jeux Vidéo",
+        "witcher": "RPG immersif avec une histoire captivante",
+        "souls": "Challenge et satisfaction garantis",
+        "rocket": "Football + voitures = addiction",
+        "valorant": "FPS tactique et compétitif"
+      },
+      "manga": {
+        "title": "Manga & Anime",
+        "haikyuu": "L'excellence du volleyball animé",
+        "opm": "Humour et action explosive",
+        "aot": "Scénario complexe et palpitant",
+        "naruto": "Le classique qui a tout changé"
+      }
+    },
+    "contact": {
+      "title": "Contactez-moi",
+      "lets-talk": "Discutons ensemble !",
+      "description": "Vous avez un projet en tête ? Une question ? Ou simplement envie de discuter tech, cybersécurité, ou même de gaming ? N'hésitez pas à me contacter !",
+      "email": "Email",
+      "form": {
+        "name": "Nom",
+        "email": "Email",
+        "subject": "Sujet",
+        "message": "Message",
+        "send": "Envoyer le message",
+        "success": "Message envoyé avec succès ! Je vous répondrai bientôt.",
+        "error": "Une erreur s'est produite. Veuillez réessayer."
+      }
+    },
+    "footer": {
+      "rights": "Tous droits réservés.",
+      "made": "Fait avec",
+      "and": "et"
+    },
+    "themes": {
+      "cyber": "Cyber Dark",
+      "light": "Professional",
+      "matrix": "Matrix",
+      "ocean": "Ocean"
+    }
+  },
+  "en": {
+    "nav": {
+      "name": "Giremu",
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "passions": "Passions",
+      "contact": "Contact"
+    },
+    "hero": {
+      "greeting": "Hi, I'm",
+      "description": "Passionate about cybersecurity and system infrastructure, I design secure and automated solutions for a more reliable digital world.",
+      "cta": {
+        "projects": "View my projects",
+        "contact": "Contact me",
+        "cv": "Download CV"
+      },
+      "scroll": "Scroll"
+    },
+    "about": {
+      "title": "About Me",
+      "intro": "Specialized in <strong>cybersecurity</strong> and <strong>system infrastructure</strong>, I combine technical expertise and creativity to build robust and secure IT environments.",
+      "description": "My journey has allowed me to develop a comprehensive understanding of security challenges, from network architecture to deployment automation. I enjoy solving complex problems and creating innovative solutions.",
+      "technologies": "Technologies I use:",
+      "tech": {
+        "security": "Security",
+        "infra": "Infrastructure",
+        "dev": "Development"
+      }
+    },
+    "skills": {
+      "title": "Skills",
+      "security": {
+        "title": "Cybersecurity",
+        "pentest": "Penetration Testing",
+        "vuln": "Vulnerability Analysis",
+        "incident": "Incident Response"
+      },
+      "infra": {
+        "title": "Infrastructure"
+      },
+      "dev": {
+        "title": "Development"
+      },
+      "auto": {
+        "title": "Automation",
+        "monitoring": "Monitoring & Alerting"
+      }
+    },
+    "projects": {
+      "title": "My Projects",
+      "game": {
+        "title": "Interactive Python Game",
+        "description": "Game developed in Python with Pygame, including collision management, scoring system, and progressive levels. Object-oriented architecture and smooth animations."
+      },
+      "ansible": {
+        "title": "Ansible Playbook - Infrastructure",
+        "description": "Complete infrastructure deployment automation with Ansible. Server configuration, security hardening, and containerized application deployment."
+      },
+      "n8n": {
+        "title": "Email Automation with n8n",
+        "description": "Automation workflow for intelligent email management: filtering, classification, automatic responses, and personalized notifications."
+      }
+    },
+    "passions": {
+      "title": "My Passions",
+      "intro": "Outside the tech world, I'm passionate about gaming and manga!",
+      "gaming": {
+        "title": "Video Games",
+        "witcher": "Immersive RPG with captivating story",
+        "souls": "Challenge and satisfaction guaranteed",
+        "rocket": "Soccer + cars = addiction",
+        "valorant": "Tactical and competitive FPS"
+      },
+      "manga": {
+        "title": "Manga & Anime",
+        "haikyuu": "Excellence in animated volleyball",
+        "opm": "Humor and explosive action",
+        "aot": "Complex and thrilling storyline",
+        "naruto": "The classic that changed everything"
+      }
+    },
+    "contact": {
+      "title": "Contact Me",
+      "lets-talk": "Let's talk!",
+      "description": "Do you have a project in mind? A question? Or just want to discuss tech, cybersecurity, or even gaming? Feel free to contact me!",
+      "email": "Email",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send mail",
+        "success": "Message sent successfully! I'll get back to you soon.",
+        "error": "An error occurred. Please try again."
+      }
+    },
+    "footer": {
+      "rights": "All rights reserved.",
+      "made": "Made with",
+      "and": "and"
+    },
+    "themes": {
+      "cyber": "Cyber Dark",
+      "light": "Professional",
+      "matrix": "Matrix",
+      "ocean": "Ocean"
+    }
+  },
+  "jp": {
+    "nav": {
+      "name": "Giremu",
+      "home": "ホーム",
+      "about": "私について",
+      "skills": "スキル",
+      "projects": "プロジェクト",
+      "passions": "趣味",
+      "contact": "お問い合わせ"
+    },
+    "hero": {
+      "greeting": "こんにちは、私は",
+      "description": "サイバーセキュリティとシステムインフラストラクチャに情熱を注ぎ、より信頼性の高いデジタル世界のために安全で自動化されたソリューションを設計しています。",
+      "cta": {
+        "projects": "プロジェクトを見る",
+        "contact": "お問い合わせ",
+        "cv": "履歴書をダウンロード"
+      },
+      "scroll": "スクロール"
+    },
+    "about": {
+      "title": "私について",
+      "intro": "<strong>サイバーセキュリティ</strong>と<strong>システムインフラストラクチャ</strong>を専門とし、技術的専門知識と創造性を組み合わせて、堅牢で安全なIT環境を構築しています。",
+      "description": "私の経験により、ネットワークアーキテクチャからデプロイメント自動化まで、セキュリティの課題に関する包括的な理解を深めることができました。複雑な問題を解決し、革新的なソリューションを作ることが好きです。",
+      "technologies": "使用している技術：",
+      "tech": {
+        "security": "セキュリティ",
+        "infra": "インフラストラクチャ",
+        "dev": "開発"
+      }
+    },
+    "skills": {
+      "title": "スキル",
+      "security": {
+        "title": "サイバーセキュリティ",
+        "pentest": "ペネトレーションテスト",
+        "vuln": "脆弱性分析",
+        "incident": "インシデント対応"
+      },
+      "infra": {
+        "title": "インフラストラクチャ"
+      },
+      "dev": {
+        "title": "開発"
+      },
+      "auto": {
+        "title": "自動化",
+        "monitoring": "監視とアラート"
+      }
+    },
+    "projects": {
+      "title": "私のプロジェクト",
+      "game": {
+        "title": "Pythonインタラクティブゲーム",
+        "description": "Pygameを使用してPythonで開発されたゲーム。衝突管理、スコアシステム、段階的なレベルが含まれています。オブジェクト指向アーキテクチャとスムーズなアニメーション。"
+      },
+      "ansible": {
+        "title": "Ansibleプレイブック - インフラストラクチャ",
+        "description": "Ansibleを使用した完全なインフラストラクチャ展開の自動化。サーバー構成、セキュリティハードニング、コンテナ化されたアプリケーションのデプロイメント。"
+      },
+      "n8n": {
+        "title": "n8nによるメール自動化",
+        "description": "インテリジェントなメール管理のための自動化ワークフロー：フィルタリング、分類、自動応答、パーソナライズされた通知。"
+      }
+    },
+    "passions": {
+      "title": "私の趣味",
+      "intro": "テクノロジーの世界以外では、ゲームとマンガに情熱を注いでいます！",
+      "gaming": {
+        "title": "ビデオゲーム",
+        "witcher": "魅力的なストーリーの没入型RPG",
+        "souls": "挑戦と満足感が保証されています",
+        "rocket": "サッカー + 車 = 中毒",
+        "valorant": "戦術的で競争的なFPS"
+      },
+      "manga": {
+        "title": "マンガとアニメ",
+        "haikyuu": "アニメバレーボールの卓越性",
+        "opm": "ユーモアと爆発的なアクション",
+        "aot": "複雑でスリリングなストーリー",
+        "naruto": "すべてを変えた古典"
+      }
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "lets-talk": "お話ししましょう！",
+      "description": "プロジェクトのアイデアがありますか？質問がありますか？それとも、テクノロジー、サイバーセキュリティ、ゲームについて話したいですか？お気軽にお問い合わせください！",
+      "email": "メール",
+      "form": {
+        "name": "名前",
+        "email": "メール",
+        "subject": "件名",
+        "message": "メッセージ",
+        "send": "メッセージを送信",
+        "success": "メッセージが正常に送信されました！すぐに返信します。",
+        "error": "エラーが発生しました。もう一度お試しください。"
+      }
+    },
+    "footer": {
+      "rights": "全著作権所有。",
+      "made": "で作成",
+      "and": "と"
+    },
+    "themes": {
+      "cyber": "サイバーダーク",
+      "light": "プロフェッショナル",
+      "matrix": "マトリックス",
+      "ocean": "オーシャン"
+    }
+  }
+}
