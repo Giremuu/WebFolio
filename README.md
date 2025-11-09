@@ -8,21 +8,21 @@ Last Version : 09/11/25
 ---
 # Structure of the project :
 
-portfolio/
--> index.html
--> README.md
--> css/
-    -> style.css
-    -> themes.css
-    -> responsive.css
--> js/
-    -> main.js
-    -> theme-switcher.js
-    -> i18n.js
-    -> animations.js
--> data/
-    -> translations.json
--> assets/
+- portfolio/
+- index.html
+- README.md
+- css/
+    - style.css
+    - themes.css
+    - responsive.css
+- js/
+    - main.js
+    - theme-switcher.js
+    - i18n.js
+    - animations.js
+- data/
+    - translations.json
+- assets/
 
 ---
 # Not finish !
