@@ -4,6 +4,7 @@
       "name": "Giremu",
       "home": "Accueil",
       "about": "À propos",
+      "journey": "Parcours",
       "skills": "Compétences",
       "projects": "Projets",
       "passions": "Passions",
@@ -28,6 +29,72 @@
         "security": "Sécurité",
         "infra": "Infrastructure",
         "dev": "Développement"
+      }
+    },
+    "journey": {
+      "title": "Mon Parcours",
+      "education": {
+        "title": "Formation",
+        "degree1": {
+          "title": "Licence STS Informatique parcours Cybersécurité",
+          "school": "IIA Saint-Nazaire",
+          "description": "Formation spécialisée en cybersécurité, administration système et sécurité des infrastructures."
+        },
+        "degree2": {
+          "title": "BTS SIO option SISR",
+          "school": "Institut Informatique Appliqué - Saint-Nazaire",
+          "description": "Solutions d'Infrastructure, Systèmes et Réseaux. Administration systèmes et réseaux."
+        },
+        "degree3": {
+          "title": "1ère année Sciences option Développement",
+          "school": "Université de Sciences de Nantes",
+          "description": "Fondamentaux du développement informatique et sciences."
+        },
+        "degree4": {
+          "title": "Baccalauréat Général NSI et Maths",
+          "school": "Lycée Aristide Briand - Saint-Nazaire",
+          "description": "Option Numérique et Sciences Informatiques avec Mathématiques."
+        }
+      },
+      "experience": {
+        "title": "Expérience Professionnelle",
+        "job1": {
+          "title": "Alternant Infrastructure & Réseau",
+          "company": "IDEA - Montoir",
+          "task1": "Administration et maintenance de l'infrastructure réseau",
+          "task2": "Gestion des serveurs et équipements réseau",
+          "task3": "Sécurisation et optimisation des infrastructures"
+        },
+        "job2": {
+          "title": "Technicien Support Informatique",
+          "company": "IDEA - Montoir",
+          "task1": "Support technique utilisateurs et résolution d'incidents",
+          "task2": "Maintenance du parc informatique",
+          "task3": "Assistance et formation des utilisateurs"
+        }
+      },
+      "certifications": {
+        "title": "Certifications & Diplômes",
+        "cert1": {
+          "name": "Licence STS Informatique parcours Cybersécurité",
+          "year": "2026",
+          "issuer": "IIA Saint-Nazaire"
+        },
+        "cert2": {
+          "name": "BTS SIO SISR",
+          "year": "2025",
+          "issuer": "IIA Saint-Nazaire"
+        },
+        "cert3": {
+          "name": "Certification MOC RGPD",
+          "year": "2024",
+          "issuer": "ANSSI"
+        },
+        "cert4": {
+          "name": "Baccalauréat Général NSI et Maths",
+          "year": "2022",
+          "issuer": "Lycée Aristide Briand"
+        }
       }
     },
     "skills": {
@@ -114,6 +181,7 @@
       "name": "Giremu",
       "home": "Home",
       "about": "About",
+      "journey": "Journey",
       "skills": "Skills",
       "projects": "Projects",
       "passions": "Passions",
@@ -138,6 +206,72 @@
         "security": "Security",
         "infra": "Infrastructure",
         "dev": "Development"
+      }
+    },
+    "journey": {
+      "title": "My Journey",
+      "education": {
+        "title": "Education",
+        "degree1": {
+          "title": "Bachelor's Degree in Cybersecurity",
+          "school": "IIA Saint-Nazaire",
+          "description": "Specialized training in cybersecurity, system administration and infrastructure security."
+        },
+        "degree2": {
+          "title": "BTS SIO SISR Option",
+          "school": "Applied Computer Institute - Saint-Nazaire",
+          "description": "Infrastructure Solutions, Systems and Networks. Systems and network administration."
+        },
+        "degree3": {
+          "title": "1st Year Science - Development Track",
+          "school": "University of Science of Nantes",
+          "description": "Fundamentals of computer development and science."
+        },
+        "degree4": {
+          "title": "High School Diploma NSI & Math",
+          "school": "Lycée Aristide Briand - Saint-Nazaire",
+          "description": "Digital and Computer Science option with Mathematics."
+        }
+      },
+      "experience": {
+        "title": "Professional Experience",
+        "job1": {
+          "title": "Infrastructure & Network Apprentice",
+          "company": "IDEA - Montoir",
+          "task1": "Network infrastructure administration and maintenance",
+          "task2": "Server and network equipment management",
+          "task3": "Infrastructure security and optimization"
+        },
+        "job2": {
+          "title": "IT Support Technician",
+          "company": "IDEA - Montoir",
+          "task1": "User technical support and incident resolution",
+          "task2": "IT equipment maintenance",
+          "task3": "User assistance and training"
+        }
+      },
+      "certifications": {
+        "title": "Certifications & Degrees",
+        "cert1": {
+          "name": "Bachelor's Degree in Cybersecurity",
+          "year": "2026",
+          "issuer": "IIA Saint-Nazaire"
+        },
+        "cert2": {
+          "name": "BTS SIO SISR",
+          "year": "2025",
+          "issuer": "IIA Saint-Nazaire"
+        },
+        "cert3": {
+          "name": "GDPR MOC Certification",
+          "year": "2024",
+          "issuer": "ANSSI"
+        },
+        "cert4": {
+          "name": "High School Diploma NSI & Math",
+          "year": "2022",
+          "issuer": "Lycée Aristide Briand"
+        }
       }
     },
     "skills": {
@@ -224,6 +358,7 @@
       "name": "Giremu",
       "home": "ホーム",
       "about": "私について",
+      "journey": "経歴",
       "skills": "スキル",
       "projects": "プロジェクト",
       "passions": "趣味",
@@ -248,6 +383,72 @@
         "security": "セキュリティ",
         "infra": "インフラストラクチャ",
         "dev": "開発"
+      }
+    },
+    "journey": {
+      "title": "私の経歴",
+      "education": {
+        "title": "学歴",
+        "degree1": {
+          "title": "サイバーセキュリティ情報学学士",
+          "school": "IIAサン＝ナゼール",
+          "description": "サイバーセキュリティ、システム管理、インフラセキュリティの専門トレーニング。"
+        },
+        "degree2": {
+          "title": "BTS SIO SISRオプション",
+          "school": "応用情報学院 - サン＝ナゼール",
+          "description": "インフラソリューション、システムとネットワーク。システムとネットワーク管理。"
+        },
+        "degree3": {
+          "title": "理学部1年 開発コース",
+          "school": "ナント理学部",
+          "description": "コンピュータ開発と科学の基礎。"
+        },
+        "degree4": {
+          "title": "高校卒業証書 NSIと数学",
+          "school": "アリスティド・ブリアン高校 - サン＝ナゼール",
+          "description": "デジタルとコンピュータサイエンスオプションと数学。"
+        }
+      },
+      "experience": {
+        "title": "職務経験",
+        "job1": {
+          "title": "インフラとネットワーク研修生",
+          "company": "IDEA - モントワール",
+          "task1": "ネットワークインフラの管理とメンテナンス",
+          "task2": "サーバーとネットワーク機器の管理",
+          "task3": "インフラのセキュリティと最適化"
+        },
+        "job2": {
+          "title": "ITサポート技術者",
+          "company": "IDEA - モントワール",
+          "task1": "ユーザー技術サポートとインシデント解決",
+          "task2": "IT機器のメンテナンス",
+          "task3": "ユーザー支援とトレーニング"
+        }
+      },
+      "certifications": {
+        "title": "認定資格と学位",
+        "cert1": {
+          "name": "サイバーセキュリティ情報学学士",
+          "year": "2026年",
+          "issuer": "IIAサン＝ナゼール"
+        },
+        "cert2": {
+          "name": "BTS SIO SISR",
+          "year": "2025年",
+          "issuer": "IIAサン＝ナゼール"
+        },
+        "cert3": {
+          "name": "RGPD MOC認定",
+          "year": "2024年",
+          "issuer": "ANSSI"
+        },
+        "cert4": {
+          "name": "高校卒業証書 NSIと数学",
+          "year": "2022年",
+          "issuer": "アリスティド・ブリアン高校"
+        }
       }
     },
     "skills": {
