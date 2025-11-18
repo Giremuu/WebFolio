@@ -134,19 +134,101 @@
     "passions": {
       "title": "Mes Passions",
       "intro": "En dehors du monde de la tech, je suis passionné par l'univers du gaming et des mangas !",
+      "flip_hint": "Cliquez pour plus d'infos",
+      "genre_label": "Genre",
       "gaming": {
         "title": "Jeux Vidéo",
-        "witcher": "RPG immersif avec une histoire captivante",
-        "souls": "Challenge et satisfaction garantis",
-        "rocket": "Football + voitures = addiction",
-        "valorant": "FPS tactique et compétitif"
+        "developer_label": "Développeur",
+        "release_label": "Sortie",
+        "fromsoftware": {
+          "name": "FromSoftware",
+          "games": "Dark Souls I, II, III, Sekiro, Bloodborne, Elden Ring",
+          "developer": "FromSoftware",
+          "release": "2011-2022",
+          "description": "La légende des Souls-like. Des jeux réputés pour leur difficulté exigeante, leur lore cryptique et leur gameplay précis. Chaque victoire est une satisfaction méritée."
+        },
+        "hades": {
+          "name": "Hades",
+          "genre": "Roguelike / Action",
+          "developer": "Supergiant Games",
+          "release": "2020",
+          "description": "Incarnez Zagreus, fils d'Hadès, dans sa tentative d'échapper aux enfers. Un roguelike addictif avec narration dynamique, combats fluides et une direction artistique sublime."
+        },
+        "hollowknight": {
+          "name": "Hollow Knight",
+          "genre": "Metroidvania",
+          "developer": "Team Cherry",
+          "release": "2017",
+          "description": "Explorez le royaume déchu d'Hallownest dans ce metroidvania sombre et magnifique. Gameplay précis, boss épiques et une atmosphère envoûtante."
+        },
+        "ninesols": {
+          "name": "Nine Sols",
+          "genre": "Metroidvania / Action",
+          "developer": "Red Candle Games",
+          "release": "2024",
+          "description": "Un metroidvania d'inspiration asiatique mélangeant mythologie taoïste et science-fiction. Combats au sabre exigeants et univers cyberpunk unique."
+        },
+        "smash": {
+          "name": "Super Smash Bros",
+          "genre": "Fighting / Party Game",
+          "developer": "Nintendo",
+          "release": "1999-2018",
+          "description": "Le crossover ultime de Nintendo. Affrontez vos amis avec vos personnages préférés dans des combats frénétiques et stratégiques. Simple à apprendre, difficile à maîtriser."
+        },
+        "undertale": {
+          "name": "Undertale",
+          "genre": "RPG / Indie",
+          "developer": "Toby Fox",
+          "release": "2015",
+          "description": "Un RPG où personne ne doit mourir. Histoire touchante, personnages mémorables, musique exceptionnelle et mécaniques de combat innovantes qui défient les conventions du genre."
+        }
       },
       "manga": {
         "title": "Manga & Anime",
-        "haikyuu": "L'excellence du volleyball animé",
-        "opm": "Humour et action explosive",
-        "aot": "Scénario complexe et palpitant",
-        "naruto": "Le classique qui a tout changé"
+        "author_label": "Auteur",
+        "release_label": "Sortie",
+        "rezero": {
+          "name": "Re:Zero",
+          "genre": "Isekai, Dark Fantasy",
+          "author": "Tappei Nagatsuki",
+          "release": "2016-présent",
+          "description": "Subaru Natsuki est transporté dans un monde fantastique avec le pouvoir de revenir dans le temps après sa mort. Un isekai sombre et émotionnel qui déconstruit le genre."
+        },
+        "chainsawman": {
+          "name": "Chainsaw Man",
+          "genre": "Action, Dark Fantasy",
+          "author": "Tatsuki Fujimoto",
+          "release": "2018-présent",
+          "description": "Denji, un chasseur de démons fusionné avec son chien tronçonneuse, rejoint une organisation pour combattre les démons. Un shōnen déjanté et viscéral avec un humour noir."
+        },
+        "owariseraph": {
+          "name": "Owari no Seraph",
+          "genre": "Dark Fantasy, Post-Apocalypse",
+          "author": "Takaya Kagami",
+          "release": "2015-présent",
+          "description": "Dans un monde post-apocalyptique où les vampires règnent, Yuichiro cherche à venger sa famille. Action intense, armes démoniaques et complots surnaturels."
+        },
+        "berserk": {
+          "name": "Berserk",
+          "genre": "Dark Fantasy, Seinen",
+          "author": "Kentaro Miura",
+          "release": "1989-2021",
+          "description": "Guts, l'épéiste noir, affronte démons et destinée dans un univers medieval-fantastique brutal. Un chef-d'œuvre du dark fantasy avec un art et une narration exceptionnels."
+        },
+        "kaguya": {
+          "name": "Kaguya-sama: Love Is War",
+          "genre": "Comédie Romantique, Seinen",
+          "author": "Aka Akasaka",
+          "release": "2019-2023",
+          "description": "Deux génies du conseil étudiant s'affrontent dans une guerre psychologique pour forcer l'autre à avouer ses sentiments. Comédie romantique brillante et hilarante."
+        },
+        "lordmysteries": {
+          "name": "Lord of Mysteries",
+          "genre": "Fantasy, Mystère, Steampunk",
+          "author": "Cuttlefish That Loves Diving",
+          "release": "2020-présent",
+          "description": "Dans un monde victorien-steampunk empli de mystères surnaturels, Zhou Mingrui se réveille dans un nouveau monde. Web novel chinois culte adapté en manhua avec worldbuilding complexe."
+        }
       }
     },
     "contact": {
@@ -311,19 +393,101 @@
     "passions": {
       "title": "My Passions",
       "intro": "Outside the tech world, I'm passionate about gaming and manga!",
+      "flip_hint": "Click for more info",
+      "genre_label": "Genre",
       "gaming": {
         "title": "Video Games",
-        "witcher": "Immersive RPG with captivating story",
-        "souls": "Challenge and satisfaction guaranteed",
-        "rocket": "Soccer + cars = addiction",
-        "valorant": "Tactical and competitive FPS"
+        "developer_label": "Developer",
+        "release_label": "Release",
+        "fromsoftware": {
+          "name": "FromSoftware",
+          "games": "Dark Souls I, II, III, Sekiro, Bloodborne, Elden Ring",
+          "developer": "FromSoftware",
+          "release": "2011-2022",
+          "description": "The legend of Souls-like games. Renowned for demanding difficulty, cryptic lore, and precise gameplay. Every victory is a well-earned satisfaction."
+        },
+        "hades": {
+          "name": "Hades",
+          "genre": "Roguelike / Action",
+          "developer": "Supergiant Games",
+          "release": "2020",
+          "description": "Play as Zagreus, son of Hades, in his attempt to escape the underworld. An addictive roguelike with dynamic storytelling, fluid combat, and sublime art direction."
+        },
+        "hollowknight": {
+          "name": "Hollow Knight",
+          "genre": "Metroidvania",
+          "developer": "Team Cherry",
+          "release": "2017",
+          "description": "Explore the fallen kingdom of Hallownest in this dark and beautiful metroidvania. Precise gameplay, epic bosses, and an enchanting atmosphere."
+        },
+        "ninesols": {
+          "name": "Nine Sols",
+          "genre": "Metroidvania / Action",
+          "developer": "Red Candle Games",
+          "release": "2024",
+          "description": "An Asian-inspired metroidvania blending Taoist mythology and science fiction. Demanding sword combat and a unique cyberpunk universe."
+        },
+        "smash": {
+          "name": "Super Smash Bros",
+          "genre": "Fighting / Party Game",
+          "developer": "Nintendo",
+          "release": "1999-2018",
+          "description": "The ultimate Nintendo crossover. Battle your friends with your favorite characters in frantic and strategic fights. Easy to learn, hard to master."
+        },
+        "undertale": {
+          "name": "Undertale",
+          "genre": "RPG / Indie",
+          "developer": "Toby Fox",
+          "release": "2015",
+          "description": "An RPG where nobody has to die. Touching story, memorable characters, exceptional music, and innovative combat mechanics that defy genre conventions."
+        }
       },
       "manga": {
         "title": "Manga & Anime",
-        "haikyuu": "Excellence in animated volleyball",
-        "opm": "Humor and explosive action",
-        "aot": "Complex and thrilling storyline",
-        "naruto": "The classic that changed everything"
+        "author_label": "Author",
+        "release_label": "Release",
+        "rezero": {
+          "name": "Re:Zero",
+          "genre": "Isekai, Dark Fantasy",
+          "author": "Tappei Nagatsuki",
+          "release": "2016-present",
+          "description": "Subaru Natsuki is transported to a fantasy world with the power to return to the past after death. A dark and emotional isekai that deconstructs the genre."
+        },
+        "chainsawman": {
+          "name": "Chainsaw Man",
+          "genre": "Action, Dark Fantasy",
+          "author": "Tatsuki Fujimoto",
+          "release": "2018-present",
+          "description": "Denji, a demon hunter merged with his chainsaw dog, joins an organization to fight demons. A wild and visceral shōnen with dark humor."
+        },
+        "owariseraph": {
+          "name": "Owari no Seraph",
+          "genre": "Dark Fantasy, Post-Apocalypse",
+          "author": "Takaya Kagami",
+          "release": "2015-present",
+          "description": "In a post-apocalyptic world ruled by vampires, Yuichiro seeks to avenge his family. Intense action, demonic weapons, and supernatural plots."
+        },
+        "berserk": {
+          "name": "Berserk",
+          "genre": "Dark Fantasy, Seinen",
+          "author": "Kentaro Miura",
+          "release": "1989-2021",
+          "description": "Guts, the Black Swordsman, confronts demons and destiny in a brutal medieval-fantasy universe. A dark fantasy masterpiece with exceptional art and storytelling."
+        },
+        "kaguya": {
+          "name": "Kaguya-sama: Love Is War",
+          "genre": "Romantic Comedy, Seinen",
+          "author": "Aka Akasaka",
+          "release": "2019-2023",
+          "description": "Two student council geniuses engage in psychological warfare to force the other to confess their feelings. A brilliant and hilarious romantic comedy."
+        },
+        "lordmysteries": {
+          "name": "Lord of Mysteries",
+          "genre": "Fantasy, Mystery, Steampunk",
+          "author": "Cuttlefish That Loves Diving",
+          "release": "2020-present",
+          "description": "In a Victorian-steampunk world filled with supernatural mysteries, Zhou Mingrui awakens in a new world. Cult Chinese web novel adapted to manhua with complex worldbuilding."
+        }
       }
     },
     "contact": {
@@ -488,19 +652,101 @@
     "passions": {
       "title": "私の趣味",
       "intro": "テクノロジーの世界以外では、ゲームとマンガに情熱を注いでいます！",
+      "flip_hint": "クリックして詳細を表示",
+      "genre_label": "ジャンル",
       "gaming": {
         "title": "ビデオゲーム",
-        "witcher": "魅力的なストーリーの没入型RPG",
-        "souls": "挑戦と満足感が保証されています",
-        "rocket": "サッカー + 車 = 中毒",
-        "valorant": "戦術的で競争的なFPS"
+        "developer_label": "開発元",
+        "release_label": "発売",
+        "fromsoftware": {
+          "name": "FromSoftware",
+          "games": "ダークソウルI、II、III、SEKIRO、Bloodborne、エルデンリング",
+          "developer": "FromSoftware",
+          "release": "2011-2022年",
+          "description": "ソウルライクの伝説。要求の厳しい難易度、謎めいた伝承、正確なゲームプレイで有名。すべての勝利は十分に獲得した満足感です。"
+        },
+        "hades": {
+          "name": "ハデス",
+          "genre": "ローグライク / アクション",
+          "developer": "Supergiant Games",
+          "release": "2020年",
+          "description": "ハデスの息子ザグレウスとなり、冥界からの脱出を試みる。ダイナミックな物語、流動的な戦闘、崇高なアートディレクションを持つ中毒性のあるローグライク。"
+        },
+        "hollowknight": {
+          "name": "ホロウナイト",
+          "genre": "メトロイドヴァニア",
+          "developer": "Team Cherry",
+          "release": "2017年",
+          "description": "暗く美しいメトロイドヴァニアで、滅びた王国ハロウネストを探索。正確なゲームプレイ、壮大なボス、魅惑的な雰囲気。"
+        },
+        "ninesols": {
+          "name": "Nine Sols",
+          "genre": "メトロイドヴァニア / アクション",
+          "developer": "Red Candle Games",
+          "release": "2024年",
+          "description": "道教神話とSFを融合したアジア風メトロイドヴァニア。厳しい剣戟戦闘とユニークなサイバーパンクの世界観。"
+        },
+        "smash": {
+          "name": "大乱闘スマッシュブラザーズ",
+          "genre": "格闘 / パーティーゲーム",
+          "developer": "Nintendo",
+          "release": "1999-2018年",
+          "description": "任天堂究極のクロスオーバー。お気に入りのキャラクターで友達と熱狂的で戦略的な戦いを繰り広げる。習得は簡単、マスターは困難。"
+        },
+        "undertale": {
+          "name": "Undertale",
+          "genre": "RPG / インディー",
+          "developer": "Toby Fox",
+          "release": "2015年",
+          "description": "誰も死ななくてもいいRPG。心温まる物語、記憶に残るキャラクター、素晴らしい音楽、ジャンルの慣習に挑戦する革新的な戦闘メカニクス。"
+        }
       },
       "manga": {
         "title": "マンガとアニメ",
-        "haikyuu": "アニメバレーボールの卓越性",
-        "opm": "ユーモアと爆発的なアクション",
-        "aot": "複雑でスリリングなストーリー",
-        "naruto": "すべてを変えた古典"
+        "author_label": "作者",
+        "release_label": "発売",
+        "rezero": {
+          "name": "Re:ゼロから始める異世界生活",
+          "genre": "異世界、ダークファンタジー",
+          "author": "長月達平",
+          "release": "2016年-現在",
+          "description": "ナツキ・スバルは死後に時間を巻き戻す力を持って異世界に転送される。ジャンルを解体する暗く感情的な異世界アニメ。"
+        },
+        "chainsawman": {
+          "name": "チェンソーマン",
+          "genre": "アクション、ダークファンタジー",
+          "author": "藤本タツキ",
+          "release": "2018年-現在",
+          "description": "チェンソーの悪魔と融合した悪魔ハンター、デンジが組織に加わり悪魔と戦う。ブラックユーモアを伴う狂気的で残酷な少年漫画。"
+        },
+        "owariseraph": {
+          "name": "終わりのセラフ",
+          "genre": "ダークファンタジー、ポストアポカリプス",
+          "author": "鏡貴也",
+          "release": "2015年-現在",
+          "description": "ヴァンパイアが支配するポストアポカリプスの世界で、優一郎は家族の復讐を求める。激しいアクション、悪魔の武器、超自然的な陰謀。"
+        },
+        "berserk": {
+          "name": "ベルセルク",
+          "genre": "ダークファンタジー、青年",
+          "author": "三浦建太郎",
+          "release": "1989-2021年",
+          "description": "黒の剣士ガッツが残酷な中世ファンタジー世界で悪魔と運命に立ち向かう。卓越した芸術と物語を持つダークファンタジーの傑作。"
+        },
+        "kaguya": {
+          "name": "かぐや様は告らせたい～天才たちの恋愛頭脳戦～",
+          "genre": "ラブコメディ、青年",
+          "author": "赤坂アカ",
+          "release": "2019-2023年",
+          "description": "生徒会の二人の天才が相手に告白させるための心理戦を繰り広げる。輝かしく陽気なラブコメディ。"
+        },
+        "lordmysteries": {
+          "name": "詭秘之主",
+          "genre": "ファンタジー、ミステリー、スチームパンク",
+          "author": "愛潜水的烏賊",
+          "release": "2020年-現在",
+          "description": "超自然的な謎に満ちたヴィクトリア朝スチームパンク世界で、周明瑞が新しい世界で目覚める。複雑な世界観を持つカルト的中国ウェブ小説のマンファ化。"
+        }
       }
     },
     "contact": {

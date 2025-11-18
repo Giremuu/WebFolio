@@ -176,6 +176,48 @@ class ContactForm {
     }
 }
 
+// ==================== FLIP CARDS ====================
+class FlipCards {
+    constructor() {
+        this.cards = document.querySelectorAll('.flip-card');
+        this.init();
+    }
+
+    init() {
+        this.cards.forEach(card => {
+            // Pour les appareils tactiles
+            card.addEventListener('click', (e) => {
+                // Si la carte n'est pas déjà retournée
+                if (!card.classList.contains('flipped')) {
+                    // Retourner toutes les autres cartes
+                    this.cards.forEach(c => {
+                        if (c !== card) {
+                            c.classList.remove('flipped');
+                        }
+                    });
+                    // Retourner cette carte
+                    card.classList.add('flipped');
+                } else {
+                    // Si on clique à nouveau, la remettre
+                    card.classList.remove('flipped');
+                }
+            });
+
+            // Empêcher la propagation pour éviter les conflits
+            card.addEventListener('touchstart', (e) => {
+                e.stopPropagation();
+            }, { passive: true });
+        });
+
+        // Fermer toutes les cartes si on clique en dehors
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.flip-card')) {
+                this.cards.forEach(card => card.classList.remove('flipped'));
+            }
+        });
+    }
+}
+
 // ==================== UTILITAIRES ====================
 
 function initLazyLoading() {
@@ -290,7 +332,8 @@ function activateEasterEgg() {
 // ==================== INITIALISATION ====================
 document.addEventListener('DOMContentLoaded', () => {
     new ContactForm();
-    
+    new FlipCards();
+
     initLazyLoading();
     initEmailCopy();
     initKonamiCode();

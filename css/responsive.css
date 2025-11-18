@@ -182,9 +182,47 @@ RESPONSIVE STYLES
     .passion-items {
         grid-template-columns: 1fr;
     }
-    
+
     .passions-content {
         gap: 2rem;
+    }
+
+    /* Flip Cards - Mobile Optimization */
+    .flip-card {
+        height: 280px;
+    }
+
+    .flip-card-front .passion-icon {
+        font-size: 3rem;
+    }
+
+    .flip-card-front h4 {
+        font-size: 1.1rem;
+    }
+
+    .flip-card-back {
+        padding: 1.5rem 1rem;
+    }
+
+    .flip-card-back h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .game-info p {
+        font-size: 0.85rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .game-info strong {
+        min-width: 90px;
+        font-size: 0.85rem;
+    }
+
+    .game-description {
+        font-size: 0.8rem !important;
+        margin-top: 0.75rem;
+        padding-top: 0.75rem;
     }
     
     /* Contact */
@@ -257,6 +295,49 @@ RESPONSIVE STYLES
     .project-card,
     .passion-category {
         padding: 1.5rem;
+    }
+
+    /* Flip Cards - Small Mobile */
+    .flip-card {
+        height: 260px;
+    }
+
+    .flip-card-front .passion-icon {
+        font-size: 2.5rem;
+    }
+
+    .flip-card-front h4 {
+        font-size: 1rem;
+    }
+
+    .flip-hint {
+        font-size: 0.75rem;
+    }
+
+    .flip-card-back {
+        padding: 1.2rem 0.9rem;
+    }
+
+    .flip-card-back h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .game-info p {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .game-info strong {
+        min-width: 80px;
+        font-size: 0.8rem;
+    }
+
+    .game-description {
+        font-size: 0.75rem !important;
+        margin-top: 0.6rem;
+        padding-top: 0.6rem;
+        line-height: 1.5 !important;
     }
     
     .contact-form-container {
