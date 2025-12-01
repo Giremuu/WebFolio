@@ -98,7 +98,6 @@ window.addEventListener('scroll', () => {
 });
 
 // EmailJS Configuration
-// IMPORTANT: Remplacez ces valeurs par vos propres clés EmailJS
 // Obtenez-les sur https://www.emailjs.com/
 const EMAILJS_PUBLIC_KEY = 'VOTRE_PUBLIC_KEY';
 const EMAILJS_SERVICE_ID = 'VOTRE_SERVICE_ID';
