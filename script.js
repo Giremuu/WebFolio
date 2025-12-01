@@ -97,11 +97,10 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// EmailJS Configuration
-// Obtenez-les sur https://www.emailjs.com/
-const EMAILJS_PUBLIC_KEY = 'VOTRE_PUBLIC_KEY';
-const EMAILJS_SERVICE_ID = 'VOTRE_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'VOTRE_TEMPLATE_ID';
+// EmailJS Configuration https://www.emailjs.com/
+const EMAILJS_PUBLIC_KEY = 'PUBLIC_KEY';
+const EMAILJS_SERVICE_ID = 'SERVICE_ID';
+const EMAILJS_TEMPLATE_ID = 'TEMPLATE_ID';
 
 // Initialize EmailJS
 (function() {
@@ -122,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.disabled = true;
         formStatus.style.display = 'none';
 
-        // Send email using EmailJS
+        // Send email (with EmailJS)
         emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
             .then(function() {
                 // Success
@@ -151,6 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
 // Intersection Observer for animations
 const observerOptions = {
     threshold: 0.1,
@@ -165,6 +165,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, observerOptions);
+
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
