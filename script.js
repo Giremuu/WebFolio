@@ -98,9 +98,9 @@ window.addEventListener('scroll', () => {
 });
 
 // EmailJS Configuration https://www.emailjs.com/
-const EMAILJS_PUBLIC_KEY = 'PUBLIC_KEY';
-const EMAILJS_SERVICE_ID = 'SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'TEMPLATE_ID';
+const EMAILJS_PUBLIC_KEY = 'DYWsLsM_S2oFFi2WS';
+const EMAILJS_SERVICE_ID = 'service_t2t5m1k';
+const EMAILJS_TEMPLATE_ID = 'template_sqpcdvc';
 
 // Initialize EmailJS
 (function() {
@@ -176,3 +176,16 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
+
+// Passion Carousel Navigation
+function scrollCarousel(type, direction) {
+    const carousel = document.getElementById(`${type}-carousel`);
+    const cardWidth = carousel.querySelector('.passion-card').offsetWidth;
+    const gap = 24; // 1.5rem en pixels
+    const scrollAmount = (cardWidth + gap) * direction;
+    
+    carousel.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
+}
